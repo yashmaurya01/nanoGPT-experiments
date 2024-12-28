@@ -5,6 +5,8 @@ Following Andrej Karpathy's tutorial for building nanoGPT from scratch (https://
 This repo contains my experiments with the nanoGPT model explained in the tutorial. The model is only the decoder part of the transformer and trained on mini shakespeare dataset. The video walks throught the explanation of each decision for each line of code and must watch to understand attention in detail.
 The training and validation loss went from `train loss 3.6488, val loss 3.6718` initially to `train loss 1.1882, val loss 1.4933` after 2000 epochs.
 
+Note: This code only covers the pretraining of a decoder model, so its still a smart document completer and will keep rambling tokens without stopping, if max_tokens would be set to a high number. The next step would be alignment tuning this model to a more QnA format which the GPT models are known for. RLHF is used to do this; Proximal policy optimization is something which OpenAI used to tune this model and mostly the secret sauce for the amazing GPT results.
+
 ## How to run
 Just run the main.ipynb file. It will download the dataset, preprocess it and train the model. 
 
