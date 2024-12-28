@@ -3,14 +3,14 @@ Following Andrej Karpathy's tutorial for building nanoGPT from scratch (https://
 
 ## About
 This repo contains my experiments with the nanoGPT model explained in the tutorial. The model is only the decoder part of the transformer and trained on mini shakespeare dataset. The video walks throught the explanation of each decision for each line of code and must watch to understand attention in detail.
-The training and validation loss went from 2.8 initially to 1.2 after 2000 epochs.
+The training and validation loss went from `train loss 3.6488, val loss 3.6718` initially to `train loss 1.1882, val loss 1.4933` after 2000 epochs.
 
 ## How to run
 Just run the main.ipynb file. It will download the dataset, preprocess it and train the model. 
 
 Initially, I was running everything locally on my macbook pro. But the training was too slow and I had to move to google colab. The colab notebook is also in the repo.
 
-The final code took roughly 25 minutes to run on colab on the T4 GPU for 2000 epochs.
+The final code took roughly 27 minutes to run on colab on the T4 GPU for 2000 epochs.
 
 ## Results
 Just with a Bigram model I got this:
